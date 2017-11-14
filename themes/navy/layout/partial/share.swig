@@ -1,0 +1,5 @@
+<a href="https://www.travis-ci.org/51nb/miox" rel="nofollow noreferrer noopener" target="_blank"><img src="https://www.travis-ci.org/51nb/miox.svg?branch=master" alt="Build Status" class="js-lazy-loaded"></a>
+<a href="https://coveralls.io/github/51nb/miox" rel="nofollow noreferrer noopener" target="_blank"><img src="https://coveralls.io/repos/github/51nb/miox/badge.svg?1" alt="Coverage Status" class="js-lazy-loaded"></a>
+<a href="https://www.npmjs.org/package/miox" rel="nofollow noreferrer noopener" target="_blank"><img src="http://img.shields.io/npm/v/miox.svg?style=flat" alt="NPM Version" class="js-lazy-loaded"></a>
+<a href="https://www.npmjs.org/package/miox" rel="nofollow noreferrer noopener" target="_blank"><img src="https://img.shields.io/npm/dm/miox.svg?style=flat" alt="NPM Downloads" class="js-lazy-loaded"></a>
+<a href="https://www.npmjs.org/package/miox" rel="nofollow noreferrer noopener" target="_blank"><img src="https://img.shields.io/badge/miox-starter-brightgreen.svg" alt="miox starter" class="js-lazy-loaded"></a>

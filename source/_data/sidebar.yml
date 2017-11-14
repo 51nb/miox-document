@@ -1,0 +1,26 @@
+docs:
+  getting_started:
+    what_is_miox: index.html
+    setup: setup.html
+    hello_world: hello_world.html
+    miox_css: miox_css.html
+  advanced:
+    miox_runtime: miox_runtime.html
+    miox_dom_tree: miox_dom_tree.html
+    make_plugin: make_plugin.html
+    use_ssr: use_ssr.html
+  official_plugins:
+    miox_router: miox_router.html
+    miox_animate: miox_animate.html
+    miox_vue2x: miox_vue2x.html
+    miox_react: miox_react.html
+    miox_vue2x_classify: miox_vue2x_classify.html
+    miox_vue2x_container: miox_vue2x_container.html
+  contribution:
+    contribution_code: contribution_code.html
+    contribution_code_list: contribution_code_list.html
+
+api:
+  core:
+    overview: index.html
+    event: event.html

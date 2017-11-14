@@ -1,0 +1,45 @@
+menu:
+  docs: 文档
+  api: API
+  news: 新闻
+  plugins: 插件
+  themes: 主题
+  search: 搜索
+
+index:
+  get_started: 开始使用
+
+page:
+  contents: 目录
+  back_to_top: 回到顶部
+  improve: 改进本文
+  prev: 上一页
+  next: 下一页
+  last_updated: 上次更新：%s
+
+sidebar:
+  docs:
+    getting_started: 快速入门
+    what_is_miox: 什么是Miox?
+    setup: 安装
+    hello_world: Hello World
+    miox_css: Miox Css
+    advanced: 进阶
+    miox_runtime: Miox运行时
+    miox_dom_tree: Miox Dom 树
+    make_plugin: 编写插件
+    use_ssr: 使用服务端渲染
+    official_plugins: 官方插件
+    miox_router: Miox Router
+    miox_animate: Miox Animate
+    miox_vue2x: Miox Vue2x Engine
+    miox_react: Miox React Engine
+    miox_vue2x_classify: Miox Vue2x Classify
+    miox_vue2x_container: Miox Vue2x Container
+    contribution: 贡献
+    contribution_code: 贡献代码
+    contribution_code_list: 代码结构总览
+  api:
+    core: 核心
+    overview: 接口
+    event: 事件
