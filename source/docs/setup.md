@@ -1,67 +1,51 @@
-title: Setup
+title: 如何下载与安装？
 ---
 
-{% youtube 0m2HnATkHOk %}
+Miox编译基于`Nodejs`运行环境，采用`webpack`打包编译。请使用的小伙伴优先确认已安装了`Nodejs`环境。
 
-Once Hexo is installed, run the following commands to initialise Hexo in the target `<folder>`.
+## 源码
 
-``` bash
-$ hexo init <folder>
-$ cd <folder>
-$ npm install
+- Github: [https://github.com/51nb/miox](https://github.com/51nb/miox)
+- NPM Package: [https://www.npmjs.com/package/miox](https://www.npmjs.com/package/miox)
+
+## 脚手架工具
+
+开始项目时，通过使用`miox-cli`，可以迅速生成Miox开发所需环境和配置，无需担心上手配置问题。
+
+官方推荐使用`miox-cli`来创建您的项目。如果你对Miox熟悉，那么你可以自己创建一套适合自己的模板，方便以后自己的重复创建。
+
+```bash
+npm install -g miox-cli
 ```
 
-Once initialised, here's what your project folder will look like:
+官方提供两套模板，基于浏览器端渲染的模板和基于[koa](https://www.npmjs.com/package/koa)的SSR模板。模板一旦创建完毕，业务逻辑即可开始编写，你只需要专注于内部业务逻辑的开发。
 
-``` plain
-.
-├── _config.yml
-├── package.json
-├── scaffolds
-├── source
-|   ├── _drafts
-|   └── _posts
-└── themes
+```bash
+# 创建一个项目/工程/应用
+miox create
 ```
 
-### _config.yml
+> [miox-cli 使用文档](https://github.com/51nb/miox-cli)
 
-Site [configuration](configuration.html) file. You can configure most settings here.
+## miox 组成
 
-### package.json
+Miox主要分以下几部分组成：
 
-Application data. The [EJS](http://embeddedjs.com/), [Stylus](http://learnboost.github.io/stylus/) and [Markdown](http://daringfireball.net/projects/markdown/) renderers are installed by default. If you want, you can uninstall them later.
+- 核心：`miox`
+- 路由插件：`miox-router`
+- 引擎插件：`miox-vue2x` `miox-react`
+- 动画插件：`miox-animation`
+- 其他插件：`miox-vue2x-container`
+- 服务端渲染：
+    - `miox-koa-vue2x-server-render`
+    - `miox-express-vue2x-server-render`
+    - `miox-koa-react-server-render`
+    - `miox-express-react-server-render`
+- webpack: `miox-vue2x-webpack-config`
 
-``` json package.json
-{
-  "name": "hexo-site",
-  "version": "0.0.0",
-  "private": true,
-  "hexo": {
-    "version": ""
-  },
-  "dependencies": {
-    "hexo": "^3.0.0",
-    "hexo-generator-archive": "^0.1.0",
-    "hexo-generator-category": "^0.1.0",
-    "hexo-generator-index": "^0.1.0",
-    "hexo-generator-tag": "^0.1.0",
-    "hexo-renderer-ejs": "^0.1.0",
-    "hexo-renderer-stylus": "^0.2.0",
-    "hexo-renderer-marked": "^0.2.4",
-    "hexo-server": "^0.1.2"
-  }
-}
+除了核心，你可以使用自己编写的插件替换掉其中的任意部分，但是对于初学者，并不建议马上编写自己的插件。
+开发者根据自己需要从 npm 上安装对应模块。
+
+```shell
+npm install miox-*
 ```
-
-### scaffolds
-
-[Scaffold](writing.html#Scaffolds) folder. When you create a new post, Hexo bases the new file on the scaffold.
-
-### source
-
-Source folder. This is where you put your site's content. Hexo ignores hidden files and files or folders whose names are prefixed with `_` (underscore) - except the `_posts` folder. Renderable files (e.g. Markdown, HTML) will be processed and put into the `public` folder, while other files will simply be copied.
-
-### themes
-
-[Theme](themes.html) folder. Hexo generates a static website by combining the site contents with the theme.

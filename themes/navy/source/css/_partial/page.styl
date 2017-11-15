@@ -199,11 +199,14 @@ note-warn = hsl(0, 100%, 50%)
     border: 1px solid color-border
     th
       font-weight: bold
+      font-size: 13px
     th, td
       padding: 5px 15px
-    tr
-      &:nth-child(2n)
-        background: #eee
+    tbody
+      tr
+        &:nth-child(2n + 1)
+          background: #eee
+
 
 .article-footer
   clearfix()
