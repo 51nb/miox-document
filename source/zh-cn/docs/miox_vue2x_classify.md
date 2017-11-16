@@ -3,7 +3,6 @@ title: miox-vue2x-classify
 
 支持以 [Class](http://es6.ruanyifeng.com/#docs/class) + [Decorator](http://es6.ruanyifeng.com/#docs/decorator) 的方式书写Vue.
 
-
 ## 语法规则
 
 - data通过赋值语句直接写在类体内；
@@ -143,4 +142,34 @@ export default {
         <p v-if="response">{{response}}</p>
     </template>
 </div>
+```
+
+
+关于watch, 多说一句，如果要监听对象的属性, 则方法名需要加上引号, 写成'obj.prop'的形式:
+
+```javascript
+@Component
+export default class FoodList {
+    food = {
+        type: 'fruit',
+        // 当通过 list.push() 增加列表项时，由于food的指向未变，所以通过@watch food添加的回调方法不会被触发
+        // 这种情况下，我们应该 @watch 'food.list'
+        list:[],
+    };
+
+    @watch
+    'food.list'() {
+        console.log('food list changed!');
+    }
+
+    @watch
+    food() {
+        console.log('this method will nerver be triggered');
+    }
+
+    // add new fruit be to the list
+    addFruit(val) {
+        val && this.food.list.push(val);
+    }
+}
 ```

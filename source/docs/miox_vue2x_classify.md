@@ -1,7 +1,7 @@
-# miox-vue2x-classify
+title: miox-vue2x-classify
+---
 
 支持以 [Class](http://es6.ruanyifeng.com/#docs/class) + [Decorator](http://es6.ruanyifeng.com/#docs/decorator) 的方式书写Vue.
-
 
 ## 语法规则
 
