@@ -79,4 +79,14 @@ URL变化只涉及 hash 部分变化时才被调用，参数是变化前的URL�
 ### vue 全局指令(directive)  ---  v-push/v-go/v-replace/v-redirect/v-link
 同上
 
+### v-go:animate 与 v-push:animate
+
+我们为这次跳转设定特殊的动画，而不使用默认动画。不过MIox创建时候需要启动`session:true`与设置动画引擎。
+
+> `animate`为此次动画的名称字符串
+
+```html
+<div v-go:push="url">test 1</div>
+<div v-push:slide="url">test 2</div>
+```
 

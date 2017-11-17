@@ -91,17 +91,19 @@ app.use(fn1).use(fn5, fn6, [fn7, fn8]);
 > 中间件回调函数中的 app 就是 miox 实例，且额外添加了 `app.request` 和 `app.render`。
 > 调用 `next` 表示执行下一中间件。
 
-### `app.push(url)`
+### `app.push(url, animate)`
 
 打开指定URL对应的 webview，在会话历史中清空位于当前记录后的所有记录并新增一条记录。
 
 - **Arguments:**
     - `{string} url`
+    - `{string} animate` 自定义动画名，对当前点击行为的跳转进行特殊的动画处理。
 - **Return:**
     - `{Promise}`
 - **Usage:**
 ```javascript
 app.push('/a/b?a=1#c');
+app.push('/a/b?a=1#c', 'push);
 ```
 
 ### `app.replace(url)`
@@ -117,7 +119,7 @@ app.push('/a/b?a=1#c');
 app.replace('/a/b?a=1#c');
 ```
 
-### `app.go(step)` / `app.go(url)`
+### `app.go(step, animate)` / `app.go(url, animate)`
 
 - 如果参数为数字，则打开会话历史中相对当前记录距离为 step 的 URL。
 - 如果参数为字符串，miox 会从会话历史中搜索是否已存在该URL。
@@ -126,6 +128,7 @@ app.replace('/a/b?a=1#c');
 
 - **Arguments:**
     - `{number} step | {string} url` 相对步数，或跳转地址
+    - `{string} animate` 自定义动画名，对当前点击行为的跳转进行特殊的动画处理。
 - **Return:**
     - `<Promise>`
 - **Usage:**
