@@ -4,6 +4,7 @@ docs:
     setup: setup.html
     hello_world: hello_world.html
     miox_css: miox_css.html
+    miox_vue_react: miox_difference.html
   advanced:
     miox_runtime: miox_runtime.html
     miox_dom_tree: miox_dom_tree.html

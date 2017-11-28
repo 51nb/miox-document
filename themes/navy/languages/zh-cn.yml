@@ -39,6 +39,7 @@ sidebar:
     contribution: 贡献
     contribution_code: 贡献代码
     contribution_code_list: 代码结构总览
+    miox_vue_react: Miox与主流框架的区别
   api:
     core: 核心
     overview: 接口
