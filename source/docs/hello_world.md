@@ -100,7 +100,7 @@ export default app.listen();
             console.log('Hello World is active');
         }
     })
-<script>
+</script>
 ```
 
 修改 `routes.js` 中的代码为：
